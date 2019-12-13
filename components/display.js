@@ -56,9 +56,9 @@ const Display = ({data, unit, changeUnit, isDayTime}) => {
     return (
         <div style={divStyle}>
             <div style={{position: 'absolute', top: 10, right: 10, height: 50, width: 120, display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-around'}} >
-                <button style={{...buttonStyle, backgroundColor: unit == 'imperial' ? '#5FDBA7' : isDayTime ? '#ffffff' : '#363636'}} onClick={() => changeUnit('imperial')}>F</button>
+                <button style={{...buttonStyle, backgroundColor: unit == 'imperial' ? '#5FDBA7' : isDayTime ? 'white' : '#363636'}} onClick={() => changeUnit('imperial')}>F</button>
                 <div style={{border: '1px solid black', height: 36, width: 0}}/>
-                <button style={{...buttonStyle, backgroundColor: unit != 'imperial' ? '#5FDBA7' : isDayTime ? '#ffffff' : '#363636'}} onClick={() => changeUnit('metric')}>C</button>
+                <button style={{...buttonStyle, backgroundColor: unit != 'imperial' ? '#5FDBA7' : isDayTime ? 'white' : '#363636'}} onClick={() => changeUnit('metric')}>C</button>
             </div>
             {/* <select onChange={(e) => handleCountryChange(e)}  value={country}>
                 {countries.map(item => <option key={item} >{item}</option>)}
